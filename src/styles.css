@@ -1,151 +1,35 @@
-  html {
-    width: 100%;
-    height: 100%
-  }
-  body {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
-  .container {
-    width: 80%;
-    height: 100%;
-    opacity: 1;
-    position: absolute;
-    top: 0%;
-    left: 10%;
-    display: grid;
-  }
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 
-  .bezel {
-    height: 90.9%;
-    width: 95%;
-    opacity: 1;
-    position: relative;
-    border: 2.5vw solid black;
-    border-radius: 25px;
-    overflow: hidden;
 }
 
+.main{
+	width: 100%;
+	height: 100vh;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	background-image: linear-gradient(to top right, rgba(212,0,255,255) , rgba(146,88,255,255), rgba(87,186,255,255));
+}
 
-  .container-size {
+.phone{
+	width: 80%;
+	height: 95%;
+	background-color: white;
+	border-radius: 3rem;
+	border: 16px solid rgba(0, 0, 0, 08);
+	display: grid;
+	justify-content: center;
     position: absolute;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-  }
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	box-shadow: 0 0 50px 18px rgba(90, 77, 97, 0.599);
+}
 
-  .wallpaper {
-    
-    opacity: 1;
-  }
-
-  .screen {
-    opacity: 1;
-    overflow: hidden;
-  }
-
-  .app-grid {
-    width: 80%;
-    height: 75%;
-    top: 7%;
-    left: 10%;
-    opacity: 1;
-    position: absolute;
-  }
-
-  .app-row {
-    width: 100%;
-    height: calc(100% / 3);
-    justify-self: right;
-    opacity: 1;
-    position: relative;
-  }
-
-  .app-button {
-    width: 10%;
-    display: inline-block;
-    background: rgba(171,128,205,1);
-    opacity: 1;
-    position: relative;
-    margin-top: 4%;
-    border-top-left-radius: 25%;
-    border-top-right-radius: 25%;
-    border-bottom-left-radius: 25%;
-    border-bottom-right-radius: 25%;
-    aspect-ratio: 1 / 1;
-  }
-
-  .app-button:not(:first-child) {
-    margin-left: 12.5%;
-  }
-
-  /* .three-apps {
-    left: 45% !important;
-  } */
-
-  .profile-widget {
-    width: 22.84%;
-    top: 12.5%;
-    left: 64%;
-    background: rgba(171,128,205,1);
-    opacity: 1;
-    position: absolute;
-    border-top-left-radius: 15%;
-    border-top-right-radius: 15%;
-    border-bottom-left-radius: 15%;
-    border-bottom-right-radius: 15%;
-    aspect-ratio: 1 / 1;
-  }
-
-  .status-bar {
-    width: 100%;
-    height:15%;
-    max-height: 30px;
-    background: rgba(21,5,35,0.5);
-    opacity: 1;
-    position: relative;
-    aspect-ratio: 1/0.025;
-  }
-
-  /*
-  .status-right {
-    width: 200px;
-    height: 30px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    position: absolute;
-    top: 0px;
-    left: 226px;
-    
-  }
-  .status-left {
-    width: 200px;
-    height: 30px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    
-  }
-  */
-
-  .dock {
-    width: 70%;
-    height: 15%;
-    background: rgba(21,5,35,0.5);
-    opacity: 1;
-    position: absolute;
-    top: 80%;
-    left: 15%;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-  }
+.bezel{
+	width: 150px;
+	height: 4.5%;
+}
