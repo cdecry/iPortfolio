@@ -5,11 +5,6 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './resume.component.html',
   styleUrls: ['./resume.component.css']
 })
-export class ResumeComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class ResumeComponent {
+    pdfSrc = "https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf";
 }

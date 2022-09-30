@@ -1,0 +1,9 @@
+:host {
+    background-color: white;
+}
+
+body {
+    margin: 5%;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
