@@ -1,0 +1,9 @@
+#resume-html {
+    margin: 5vw;
+    overflow-y: scroll;
+    box-sizing: content-box;
+}
+
+.just-right {
+    text-align: right;
+}
