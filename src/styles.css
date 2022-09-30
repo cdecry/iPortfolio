@@ -11,13 +11,13 @@
 	display: grid;
 	justify-content: center;
 	align-content: center;
-	background-image: linear-gradient(to top right, rgba(212,0,255,255) , rgba(146,88,255,255), rgba(87,186,255,255));
+	/* background-image: linear-gradient(to top right, rgba(212,0,255,255) , rgba(146,88,255,255), rgba(87,186,255,255)); */
 }
 
 .phone{
 	width: 80%;
 	height: 95%;
-	background-image: url(src/assets/wallpapers/cyber.gif);
+	background-image: url(src/assets/wallpapers/blossom.gif);
     background-size: 119%;
     background-position: center;
 	border-radius: 3rem;
@@ -33,51 +33,135 @@
     overflow: hidden;
 }
 
+a {
+    cursor: url('src/assets/cursor.svg'), auto;
+    text-decoration: none;
+}
+
 .status-bar {
     justify-content: center;
     position: relative;
     background-color: rgba(255, 255, 255, 0.6);
-    height: 2vw;
+    height: 1vw;
     width: 80vw;
 }
 
 .icons {
     justify-content: center;
-    align-items: center;
     position: relative;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    column-gap: 6vw;
-    row-gap: 4.5vw;
+    column-gap: 4vw;
+    row-gap: 2.5vw;
     padding-left: 10vw;
     padding-right: 10vw;
-    padding-bottom: 17vh;
+    padding-bottom: 16vh;
 }
 
 .app {
+    position: relative;
+    width: 7vw;
+    height: 7vw;
+}
+
+.icon {
     width: 5vw;
     /* background-image: linear-gradient(to top right, rgba(212,0,255,0.9), rgba(87,186,255,0.9)); */
     background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 1rem;
+    border-radius: 1.1rem;
     aspect-ratio: 1/1;
-    box-shadow: 1px 1px 0.5px 0.5px rgba(255, 255, 255, 0.3);
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, 0%);
+
+    display:none;
+}
+
+.icon:active {
+    opacity: 0.6;
+}
+
+.app-name:active {
+    font-style: normal;
+}
+
+.app-name {
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    outline: black;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 1rem;
+    position: relative;
+}
+
+#resume {
+    background-image: url(src/assets/icons/books.svg);
+    background-size: 110%;
+    background-position: center;
+
+    display: block;
+}
+
+#about-me {
+    background-image: url(src/assets/icons/notes.svg);
+    background-size: 110%;
+    background-position: center;
+
+    display: block;
+}
+
+#settings {
+    background-image: url(src/assets/icons/settings.svg);
+    background-size: 110%;
+    background-position: center;
+
+    display: block;
 }
 
 .dock-app {
     width: 5vw;
     background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 1rem;
+    border-radius: 1.1rem;
     aspect-ratio: 1/1;
-    box-shadow: 1px 1px 0.5px 0.5px rgba(255, 255, 255, 0.3);
     margin-left: 1vw;
     margin-right: 1vw;;
+}
+
+.dock-app:active {
+    opacity: 0.6;
+}
+
+#help {
+    background-image: url(src/assets/icons/messages.svg);
+    background-size: 100%;
+    background-position: center;
+}
+
+#github {
+    background-image: url(src/assets/icons/github.svg);
+    background-size: 100%;
+    background-position: center;
+}
+
+
+#linkedin {
+    background-image: url(src/assets/icons/linkedin.svg);
+    background-size: 100%;
+    background-position: center;
+}
+
+#contact {
+    background-image: url(src/assets/icons/mail.svg);
+    background-size: 100%;
+    background-position: center;
 }
 
 .dock {
     justify-content: center;
     align-items: center;
     position: absolute;
-    border: 1px red solid;
     background-color: rgba(255, 255, 255, 0.6);
     width: wrap;
     height: 7vw;
