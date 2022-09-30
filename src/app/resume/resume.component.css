@@ -1,9 +1,9 @@
-:host {
-    background-color: white;
+#resume-html {
+    margin: 5vw;
+    overflow-y: scroll;
+    box-sizing: content-box;
 }
 
-body {
-    margin: 5%;
-    overflow: scroll;
-    scroll-behavior: smooth;
+.just-right {
+    text-align: right;
 }
