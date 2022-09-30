@@ -32,7 +32,7 @@
     position: relative;
     transform: translate(-50%, 0%);
 
-    display:none;
+    /* display:none; */
 }
 
 .icon:active {
