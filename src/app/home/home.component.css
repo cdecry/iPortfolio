@@ -1,4 +1,11 @@
-.phone {
+.wallpaper {
+    width: 100%;
+	height: 100%;
+	justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-image: url(src/assets/wallpapers/blossom.gif);
     background-size: 119%;
     background-position: center;
@@ -14,6 +21,7 @@
     padding-left: 10vw;
     padding-right: 10vw;
     padding-bottom: 16vh;
+    padding-top: 8vh;
 }
 
 .app {
