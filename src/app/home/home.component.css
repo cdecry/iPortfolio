@@ -6,9 +6,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: url(src/assets/wallpapers/blossom.gif);
+    background-image: url(src/assets/wallpapers/cyber.gif);
     background-size: 119%;
     background-position: center;
+    overflow: hidden;
 }
 
 .icons {
@@ -33,7 +34,7 @@
 .icon {
     width: 5vw;
     /* background-image: linear-gradient(to top right, rgba(212,0,255,0.9), rgba(87,186,255,0.9)); */
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 1.1rem;
     aspect-ratio: 1/1;
     left: 50%;
@@ -54,10 +55,9 @@
 .app-name {
     font-size: large;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: rgb(0, 0, 0);
-    outline: black;
+    color: rgb(255, 255, 255);
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.5);
+    /* background-color: rgba(255, 255, 255, 0.5); */
     border-radius: 1rem;
     position: relative;
 }
@@ -81,6 +81,40 @@
 #settings {
     background-image: url(src/assets/icons/settings.svg);
     background-size: 115%;
+    background-position: center;
+
+    display: block;
+}
+
+#sports {
+    background-image: url(src/assets/icons/fitness.svg);
+    background-size: 115%;
+    background-position: center;
+
+    display: block;
+}
+
+#mirai {
+    /* background-image: url(src/assets/icons/settings.svg); */
+    background-image: linear-gradient(to top right, rgb(223, 154, 237), rgb(213, 243, 251));
+    background-size: 100%;
+    background-position: center;
+
+    display: block;
+}
+
+#planet {
+    background-image: url(src/assets/icons/discord.svg);
+    background-size: 100%;
+    background-position: center;
+
+    display: block;
+}
+
+#fantage {
+    /* background-image: url(src/assets/icons/settings.svg); */
+    background-image: linear-gradient(to top right, rgb(237, 154, 154), rgb(233, 248, 167), rgb(244, 195, 148), rgb(180, 249, 183));
+    background-size: 100%;
     background-position: center;
 
     display: block;
