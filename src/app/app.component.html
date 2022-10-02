@@ -1,1 +1,10 @@
-<app-frame></app-frame>
+<div class="main">
+    <div class="phone">
+        <!-- <div class="status-bar"></div> -->
+        <div [@routeAnimations]="prepareRoute(outlet)">
+            <router-outlet #outlet="outlet"></router-outlet>
+        </div>
+
+
+    </div>
+</div>

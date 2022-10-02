@@ -6,10 +6,10 @@ import { ResumeComponent } from './resume/resume.component';
 import { SettingsComponent } from './settings/settings.component';
 
 const routes: Routes = [
-    { path: '' , redirectTo: 'home', pathMatch: 'full' },
-    { path: 'home' , component: HomeComponent },
-    { path: 'about-me' , component: AboutMeComponent },
-    { path: 'resume' , component: ResumeComponent },
+    { path: '' , redirectTo: 'home', pathMatch: 'full', data: { animation: 'HomePage' } },
+    { path: 'home' , component: HomeComponent, data: { animation: 'HomePage' } },
+    { path: 'about-me' , component: AboutMeComponent, data: { animation: 'AboutMePage' } },
+    { path: 'resume' , component: ResumeComponent, data: { animation: 'ResumePage' } },
     { path: 'settings' , component: SettingsComponent },
 ];
 
