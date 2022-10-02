@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DragDropModule } from "@angular/cdk/drag-drop";
 
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 
@@ -19,6 +20,7 @@ import { SettingsComponent } from './settings/settings.component';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    DragDropModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

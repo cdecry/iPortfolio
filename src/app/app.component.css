@@ -11,6 +11,8 @@
 	display: grid;
 	justify-content: center;
 	align-content: center;
+    background-color: aquamarine;
+    background-image: linear-gradient(to bottom right, rgba(212, 92, 255, 1) , rgba(97, 180, 253, 1));
 }
 
 .phone{

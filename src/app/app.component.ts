@@ -25,6 +25,11 @@ export class AppComponent {
         }
     }
 
+    @HostListener('contextmenu', ['$event'])
+    onRightClick(event: { preventDefault: () => void; }) {
+    event.preventDefault();
+    }
+    
     prepareRoute(outlet: RouterOutlet) {
         return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];
     }
